@@ -348,7 +348,7 @@ a:after {
 
 #product1Modal .modal-lg{
       /*width: 90%;*/
-      max-height: 70%;
+      /*max-height: 70%;*/
 }
 
 .addressTab{
@@ -364,8 +364,8 @@ a:after {
 	text-align: center;
 }
 
-#footerwrap h4 {
-	color: white;
+#footerwrap h5 {
+	color: grey;
 }
 
 
@@ -437,7 +437,7 @@ a:after {
 }
 
 .divider3 {
-	background-image: url('../img/bg/divider3.jpg');
+	background-image: url('../img/cycle/divider2.jpg');
 	margin-top: 0px;
 }
 
