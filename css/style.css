@@ -1,0 +1,791 @@
+@font-face {
+  font-family: 'Philosopher Regular';
+  src: url(../fonts/Philosopher-Regular.ttf);
+}
+@font-face {
+  font-family: 'Philosopher-Bold';
+  src: url(../fonts/Philosopher-Bold.ttf);
+}
+@font-face {
+  font-family: 'Maneo_TRIAL';
+  src: url(../fonts/Maneo_TRIAL.otf);
+}
+@font-face {
+  font-family: 'Leon-Regular_TRIAL';
+  src: url(../fonts/Leon-Regular_TRIAL.ttf);
+}
+@font-face {
+  font-family: 'AvenirLTStd-Book';
+  src: url(../fonts/AvenirLTStd-Book.otf);
+}
+body{
+	font-family: 'AvenirLTStd-Book';
+	background-color: #e8e8e8;
+	overflow-x: hidden;
+}
+.container-fluid {
+  padding: 0px;
+}
+.navbar-brand {
+  padding: 0px;
+}
+.carousel{
+	background: transparent;
+	margin-top: 20px;
+}
+.carousel .item img{
+	margin: 0 auto; /* Align slide image horizontally center */
+	margin-top: 29px;
+	max-height: 600px;
+  width: 100%;
+}
+.header{
+	background-image: url(../img/header.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-size: 100% 100%;
+	height: 650px;
+	position: relative;
+}
+.nopadding{
+	margin: 0;
+	padding: 0;
+}
+.header .logo{
+	position: absolute;
+	right: 20px;
+	top:20px;
+	width: 300px;
+}
+.header .logo img{
+	height: 100%;
+	width: 100%;
+	webkit-filter: drop-shadow(5px 5px 5px #000);
+  	filter: drop-shadow(5px 5px 5px #000);
+}
+#myCarousel .fa-chevron-left, #myCarousel .fa-chevron-right {
+	position: absolute;
+	top: 50%;
+}
+.menu{
+	padding: 0 20px 0 10px;
+	position: relative;
+	background-color: #222;
+	text-align: right;
+	position: fixed;
+	height: 50px;
+	top: 0;
+	left: 0;
+	right: 0; 
+	z-index: 20;
+}
+.menu a {
+  font-family: 'Leon-Regular_TRIAL';
+}
+.slicknav_menu {
+    display:none;
+}
+
+@media screen and (max-width: 40em) {
+    .js #menu {
+        display:none;
+    }
+    
+    .js .slicknav_menu {
+        display:block;
+    }
+}
+.menu ul{
+	margin: 0;
+	padding: 0;
+}
+.menu ul li{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 15px;
+	margin-left: 20px;
+	padding: 0 10px 0 10px;
+	list-style: none;
+	text-align: center;
+}
+.menu ul li a{
+	text-decoration: none;
+}
+.menu ul li a p{
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #999;
+	margin: 0;
+	letter-spacing: 4px;
+	transition: all 400ms ease; 
+	-webkit-transition: all 400ms ease;
+}
+.menu ul li a p:hover{
+	color: #fff;
+}
+.mainlogo{
+	padding: 10px;
+	width: 60px;	
+}
+.mainlogo img{
+	width: 100%;
+	height: 100%;
+}
+@keyframes rotate{
+	100%{
+		transform: rotate(-360deg);
+	}
+}
+@keyframes move{
+	100%{
+		transform: translateX(-800px);
+	}
+}
+.about{
+	position: relative;
+	margin-left: 10px;
+	margin-top:70px;
+	box-shadow: 4px 4px 3px grey;
+}
+.about img{
+	width: 100%;
+	height: 100%;
+}
+.about-us{
+	position: relative;
+	width: 98%;
+	margin: 20px 20px 20px 0px;
+	background-color: #2A312A;
+}
+.about-us p.big{
+  font-family: 'Leon-Regular_TRIAL';
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	padding: 0;
+	font-size: 80px;
+	letter-spacing: 4px;
+	color: #fff;
+}
+.about-us p{
+	color: #fff;
+	font-size: 15px;
+	padding: 165px 20px 20px 20px;
+	letter-spacing: 1px;
+}
+.show{
+	width: 100%;
+	padding: 20px 50px 30px 50px;
+	text-align: center;
+	position: absolute;
+	top: -50px;
+	left: 0;
+}
+.show img{
+	width: 80%;
+	height: 80%;
+}
+.show-case{
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.show-case p{
+	margin: 0px 0 270px 0;
+	font-size: 200px;
+	font-weight: 900;
+	
+	color: black;
+	letter-spacing: 4px;
+}
+.heading{
+	padding: 0px;
+	text-align: center;
+	margin: 0 10px 10px 10px;
+	background-color: #2a312a;
+}
+.heading p{
+	font-size: 60px;
+	letter-spacing: 4px;
+	color: #fff;
+	margin: 0;
+}
+.dealer{
+	height: 200px;
+	position: relative;
+	margin: 10px;
+	overflow: hidden;
+}
+.dealer img{
+	width: 100%;
+	height: 100%;
+}
+.dealer .mumbai{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	color: #fff;
+	letter-spacing: 4px;
+	webkit-filter: drop-shadow(5px 5px 5px #000);
+  	filter: drop-shadow(5px 5px 5px #000);
+}
+
+.dealer .layer{
+	background-color: rgba(0,0,0,0.8);
+	padding: 20px;
+	font-size: 12px;
+	text-align: center;
+	opacity: 0;
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	vertical-align: center;
+	color: #fff;
+	letter-spacing: 2px;
+	padding-top: 0px;
+	transition: all 500ms ease;
+}
+.dealer .layer:hover{
+	opacity: 1;
+}
+.dealer .layer h2{
+	font-size: 30px;
+}
+.dealer .faridabad{
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 90px;
+	color: #fff;
+	letter-spacing: 4px;
+	webkit-filter: drop-shadow(5px 5px 5px #000);
+  	filter: drop-shadow(5px 5px 5px #000);
+}
+.dealer .gurgaon{
+	position: absolute;
+	bottom: -20px;
+	left: 10px;
+	font-size: 90px;
+	color: #fff;
+	letter-spacing: 4px;
+	webkit-filter: drop-shadow(5px 5px 5px #000);
+  	filter: drop-shadow(5px 5px 5px #000);
+}
+.dealer .noida{
+	position: absolute;
+	bottom: 40px;
+	left: -40px;
+	transform: rotate(270deg);
+	font-size: 90px;
+	color: #fff;
+	letter-spacing: 4px;
+	webkit-filter: drop-shadow(5px 5px 5px #000);
+  	filter: drop-shadow(5px 5px 5px #000);
+}
+.dealer .rajasthan{
+	position: absolute;
+	top: 130px;
+	left: -110px;
+	transform: rotate(270deg);
+	font-size: 90px;
+	color: #fff;
+	letter-spacing: 4px;
+	webkit-filter: drop-shadow(5px 5px 5px #000);
+  	filter: drop-shadow(5px 5px 5px #000);
+}
+.blog-title{
+	text-align: center;
+}
+.blog-title p{
+	font-size: 60px;
+}
+#blog-landing{
+	position: relative;
+	margin-left: 20px;
+}
+.blogs{
+	display: block;
+}
+.blog{
+	padding: 10px;
+	margin-top: 20px;
+	text-align: left;
+	background-color: #2a312a;
+	position: absolute;
+	transition: all 600ms ease-in-out;
+}
+.blog img{
+	width: 100%;
+}
+.blog h3{
+	font-size: 25px;
+	padding: 10px 0 10px 0;
+	text-align: center;
+	letter-spacing: 2px;
+	color: #fff;
+}
+.blog p{
+	font-size: 17px;
+	letter-spacing: 2px;
+	padding: 10px;
+	color: #fff;
+}
+
+#blogs hr{
+  width:15%;
+  border-top: 1px solid #000000
+} 
+a{
+	color: #fff;
+}
+a:hover{
+	text-decoration: none;
+	color: #fff;
+}
+.blog:hover{
+	background-color: #fff;
+}
+.blog:hover h3,.blog:hover p{
+	color: #000;
+}
+.width{
+	width: 101%;
+}
+.about-bg{
+	background-color: #ffffff;
+	padding-top: 60px;
+	padding-bottom: 60px; 
+}
+#showcase {
+  font-family: 'Leon-Regular_TRIAL';
+}
+.showcase-bg{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+#dealers-nav p{
+ /* font-family: 'Leon-Regular_TRIAL';*/
+ font-size:15px;
+}
+.dealers-bg{
+	background-color: #ffffff;
+	padding-top: 60px;
+	padding-bottom: 30px; 
+}
+#blogs p{
+  font-family: inherit;
+  font-size:32px;
+}
+.blog-bg{
+	padding-top: 60px;
+}
+
+#gallery-content p{
+  font-family: 'Leon-Regular_TRIAL';
+}
+
+#gallery-content{
+  margin-top:-41px;
+}
+
+.gallery-bg{
+	background-color: #ffffff;
+}
+.gallery{
+	position: relative;
+	padding-right: 20px;
+}
+.gallery p{
+	font-size: 60px; 
+	text-align: center;
+}
+.gallery-img{
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border: 1px solid white;
+}
+.gallery-img img{
+  width: 100%;
+  height: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.height{
+	height: 440px;
+}
+.gallery-img img:hover{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.footer{
+	padding: 20px;
+	text-align: center;
+  margin-top:10px;
+}
+.footer i{
+	display: inline-block;
+	font-size: 25px;
+	color: #000;
+	margin-left: 20px;
+}
+.footer p{
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+.footer a{
+	color: #000;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+.drop{
+	position: relative;
+}
+.drop:hover .dropdown-content{
+	display: block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #245375;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 20;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    font-size: 25px;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+ul.dropdown-content li{
+	margin:0;
+	display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+p{
+	letter-spacing: 2px;
+	font-size: 20px;
+}
+
+hr{
+  width:75%;
+}
+
+#about p{
+  font-size:medium;
+  padding:20px;
+}
+
+#vatange{
+  background-color:#F5F5F5;
+}
+
+#vatange img,#marine img{
+  width:100%;
+}
+
+#vatange p,#marine p{
+  font-size:medium;
+  padding:0px 10px;
+}
+
+#vatange h3,#marine h3{
+  margin-top:41px;
+}
+
+#vatange a{
+  margin-bottom:15px
+}
+
+.marine-bg{
+	background-color: #ffffff;
+	padding-bottom: 60px; 
+  padding-top:50px;
+}
+
+#bikes{
+  padding-bottom:16px;
+}
+
+#features{
+  background-image:url(../img/divider2.jpg);
+  height:322px;
+  width:100%;
+}
+
+#features h1{
+  padding-top: 70px;
+  color: white;
+  font-size: 40px;
+}
+
+#features p{
+  color: white;
+  font-size: 25px;
+}
+
+#features hr{
+  width:50%;
+}
+
+#dealers-nav .nav-tabs > li.active > a{
+  color: #808080;
+}
+
+#dealers-nav a{
+  color:#337AB7;
+}
+
+#dealers-nav a:hover, a:focus {
+    color: #C0392B;
+}
+
+#dealers-nav{
+  margin-top:-105px;
+}
+
+.nav{
+  padding-left:15%;
+  margin-bottom:none;
+}
+
+#dealers-nav p,!.span,h4{
+  color:#808080;
+}
+
+#dealers-nav p{
+  line-height:25px;
+}
+
+#dealers-nav span{
+  font-size:20px;
+}
+
+#dealers-nav .col-md-3{
+  padding:20px 15px;
+}
+
+#dealers-nav li{
+  font-size:initial;
+}
+
+#contact-us{
+   background-image:url(../img/contact-back.jpg);
+   width:100%;
+   height:428px;
+   margin-top:-41px;
+}
+
+#contact-us h1{
+  color: #FFFFFF;
+  padding-top:40px;
+}
+
+#contact-us hr{
+  width:20%;
+}
+
+#contact-us .row{
+  padding-top:100px;
+}
+
+#newsletter h3{
+  margin-top:2px;
+  color:#FFFFFF;
+}
+
+#newsletter p{
+  font-size:15px;
+  color:#FFFFFF;
+}
+
+#newsletter form{
+  width:90%;
+  padding-left:10%;
+}
+
+.social-icons{
+  color:#FFFFFF;
+  font-size:25px;
+  line-height:40px;
+}
+
+.black-background{
+  background-color:rgba(0, 0, 0, 0.27);
+  height:100%;
+  margin:0px -13px 0px -13px;
+}
+
+@media(max-width:1024px){
+	.header{
+		height: 500px;
+	}
+	.menu ul li{
+		margin-left: 10px;
+		margin-top:20px;
+	}
+	.menu ul li a p{
+		font-size: 15px;
+	}
+	.about-us p.big{
+		position: absolute;
+		font-size: 70px;
+		letter-spacing: 4px;
+		color: #fff;
+	}
+	.about-us p{
+		color: #fff;
+		font-size: 15px;
+		padding: 100px 20px 20px 20px;
+		letter-spacing: 1px;
+	}
+	.show-case p{
+		font-size: 100px;
+	}
+	.dealer .layer{
+		font-size: 14px;
+	}
+	.dealer .layer h2{
+		font-size: 19px;
+	}
+}
+@media(max-width:425px){
+	.header{
+		background-image: url(../img/img10.jpg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 100% 100%;
+		height: 600px;
+		position: relative;
+	}
+	.mainlogo{
+		display: none;
+	}
+	.dropdown-content {
+	    top: 50px;
+	    right: 20px;
+	    min-width: 160px;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 20;
+	}
+	.heading p{
+		font-size: 100px;
+	}
+	.about-us{
+		margin-left: 10px;
+		width: 95%;
+	}
+	.about-us p.big{
+		font-size: 50px;
+	}
+	.about-us p{
+		padding-top: 100px;
+	}
+	.about{
+		width: 95%;
+	}
+	.show{
+		padding: 10px;
+	}
+	.show-case{
+		text-align: center;
+	}
+	.show-case p{
+		font-size: 50px;
+		margin-bottom: 80px;	
+	}
+	.show{
+		padding-top: 40px;
+	}
+	.heading p{
+		font-size: 50px;
+	}
+	.dealer{
+		height: 300px;
+	}
+	.dealer .layer{
+		padding: 50px;
+		font-size: 17px;
+	}
+	.dealer .layer h2{
+		font-size: 22px;
+	}
+	.dealer .mumbai{
+		bottom: 10px;
+		right: 10px;
+		font-size: 40px;
+	}
+	.blog-title p{
+		font-size: 50px;
+	}
+	.gallery{
+
+	}
+	.gallery p{
+		position: relative;
+		font-size: 50px;
+		transform: none;
+		top: 0;
+		left: 0;
+		text-align: center;
+	}
+	.height{
+		height: 300px;
+	}
+	.mob-height{
+		height: 300px;
+	}
+	.blogs{
+		padding: 0;
+	}
+	.width{
+		width: 100%;
+		margin: 0;
+	}
+}	
+
+@media(max-width:375px){
+	.width{
+		width: 100%;
+	}
+
+	.blog-title p{
+		font-size: 50px;
+	}
+	.blog-title p.flip{
+		top: 130px;
+		left: 140px;
+		font-size: 180px;
+		transform: none;
+	}
+}
+@media(max-width:320px){
+	.width{
+		width: 100%;
+	}
+}
+
+@media(max-width:768px){
+	#contact-us{
+		height: 100%;
+	}
+  
+  #features p{
+    margin-bottom:15px;
+  } 
+}
