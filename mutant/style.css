@@ -416,6 +416,23 @@ a:hover{
 	padding-bottom: 120px; 
 	font-size: 20px;
 }
+
+.specs-bg{
+	background-color: #2A312A;
+	color: #fff;
+	padding-top: 10px;
+	padding-bottom: 120px; 
+	font-size: 20px;
+}
+
+.tg{
+	margin: 0 auto;
+}
+
+.tg-yw4l{
+	padding: 2px 20px;
+}
+
 .showcase-bg{
 	padding-top: 60px;
 	padding-bottom: 60px;
