@@ -560,8 +560,12 @@ hr{
 }
 
 .nav{
-  padding-left:15%;
+  padding-left:8%;
   margin-bottom:none;
+}
+
+.tab-content .tab-pane>div{
+	height: 250px;
 }
 
 #dealers-nav p,!.span,h4{
